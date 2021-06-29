@@ -1,0 +1,193 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&family=Roboto:wght@300;400;500;700&display=swap');
+* { font-family: 'Noto Sans KR', sans-serif; box-sizing: border-box; }
+.font_roboto { font-family: 'Roboto', sans-serif; }
+html { font-size: 13px; color: #000000; }
+body { margin: 0; }
+a { text-decoration: none; color: #000000; }
+ul { list-style: none; padding: 0; margin: 0; }
+
+/* footer S */
+.footer { height: 354px; text-align: center; padding-bottom: 50px; background-color: #e7e6e6; }
+.footer .tit_wrap { padding: 65px 0 26px; }
+.footer .tit_wrap .tit.tit3 { font-size: 2.4rem; font-weight: 400; }
+.footer .text { font-size: 1.9rem; display: block; font-weight: 500; }
+.footer img { height: 78px; width: 78px; margin: 30px 0 5px; }
+/* footer E */
+
+/* main/index.php */
+.main_page #menu { position: fixed; top: 0; z-index: 10; width: 775px; height: 64px; line-height: 64px; color: #ffffff; background: rgba(0,0,0,.6); right: 5%; border-bottom-left-radius: 30px; border-bottom-right-radius: 30px; } 
+.main_page #menu * { color: #ffffff;  font-family: 'Roboto', sans-serif; }
+.main_page #menu > li { float: left; width: calc(100% / 5); text-align: center; }
+.main_page #menu:after { clear: left; content: ''; display: block; }
+.main_page #menu a { opacity: 0.6; font-size: 18px; }
+.main_page #menu a:hover { opacity: 1 }
+
+.main_page #section0 { background:url("../images/main_bg.jpg") no-repeat center center; background-size: cover; }
+.main_page #section0 .text  { text-align: center; font-size: 4vw; line-height: 1; letter-spacing: .1rem; color: #ffffff;  }
+.main_page #section1 { display: table; width: 100%; background-color: #ffffff;  vertical-align: top; }
+.main_page .tit { font-weight: 400; margin: 60px 0; text-align: center; font-size: 2.4rem; }
+.main_page .stit { font-size: 1.5rem; font-weight: bold; text-align: center; margin: 1rem 0; }
+.main_page .tit2 { color: #ffffff; position: relative; }
+.main_page .tit2:after { position: absolute; content: ""; top: 100%; height: 2px; width: 50px; left: 50%; right: 0; margin: 0 auto; background: #f88c65; }
+.main_page .tit_wrap { text-align: center; padding: 5rem 0 2rem 0; }
+.main_page .tit_wrap2 { text-align: center; padding-bottom: 2rem; }
+.main_page .tit3 { position: relative; } 
+.main_page .tit3:after { position: absolute; content: ""; top: 100%; height: 2px; width: 50px; left: 0; right: 70%; margin: 0 auto; background: #7b7cd4; }
+
+.main_page #section1 .fp-tableCell, .main_page #section2 .fp-tableCell, .main_page #section4 .fp-tableCell { vertical-align: top; }
+.main_page #section2 .fp-tableCell, .main_page #section4 .fp-tableCell { padding-bottom: 50px; }
+ .main_page #section4 .fp-tableCell,  .main_page #section4 { height: auto !important; }
+.main_page .project_list { max-width: 980px; margin: 0 auto; }
+.main_page .project_list > li { float: left; width: calc(100% / 3 - 20px); margin-left: 30px; margin-bottom: 30px; }
+.main_page .project_list > li:nth-child(3n+1) { margin-left: 0; }
+.main_page .project_list a { display: block; } 
+
+
+.main_page .skills { text-align: center; }
+.main_page .skills li { display: inline-block; width: 114px; height: 116px; border-radius: 30px; box-shadow: 0 3px 6px rgb(0 0 0 / 20%), 0 3px 6px rgb(0 0 0 / 20%); margin: 0 1rem; position: relative; overflow: hidden; cursor: pointer; }
+
+.main_page .skillsBox { position: absolute; top: calc(50% - 175px); left: calc(50% - 285px); }
+.main_page .skills li.js { background:url("../images/js.png") no-repeat; background-size: cover; }
+.main_page .skills li.html { background:url("../images/html.png") no-repeat; background-size: cover; }
+.main_page .skills li.css { background:url("../images/css.png") no-repeat; background-size: cover; }
+.main_page .skills li.jquery { background:url("../images/jquery.png") no-repeat; background-size: cover; }
+.main_page .skills li.node { background:url("../images/node.png") no-repeat; background-size: cover; }
+.main_page .skills li.php { background:url("../images/php.png") no-repeat; background-size: cover; }
+
+.main_page #section2 { background-color: #6cdab2; }
+.main_page #section1, .main_page #section3 { background-color: #e7e6e6; }
+
+.main_page .portfolio { display: table; width: 725px; margin: 0 auto 30px; border-radius: 4px; box-shadow: 0 3px 6px rgb(0 0 0 / 20%), 0 3px 6px rgb(0 0 0 / 20%); background-color: #ffffff; }
+.main_page .portfolio a .phpProject { display: table-cell; vertical-align: middle; width: 345px; height: 215px; background:url("../images/portfolio/portfolio.png"); background-repeat: no-repeat; background-size: cover; }
+.main_page .portfolio .desc { display: table-cell; vertical-align: middle; padding: 25px 35px 35px; }
+.main_page .portfolio a .aboutProject { display: table-cell; vertical-align: middle; width: 345px; height: 215px; background:url("../images/project1.png"); background-repeat: no-repeat; background-size: cover; }
+
+.main_page .portfolio .t1 { font-size: 2rem;  margin-bottom: 15px; }
+.main_page .portfolio .t2 { font-size: 1.5rem; font-weight: 500;  }
+.main_page .portfolio .t3 { font-size: 1.2rem; font-weight: 300; margin-top: 15px; }
+.main_page .portfolio .link img { width: 30px; margin-top: 15px; display: block; }
+
+.main_page .text { display: block; font-size: 1.9rem; font-weight: 500; text-align: center; }
+.main_page .github_logo a { text-align: center; }
+.main_page .github_logo img { display: block; width: 78px; margin: 30px auto 5px; }
+.main_page .github_logo .giturl { display: inline-block; position: relative; left: calc(50% - 80px); }
+.main_page .github_logo:hover .giturl { text-decoration: underline; }
+
+@media all and (max-width: 740px) {
+	.main_page .portfolio { display: block !important; box-sizing: border-box; }
+	.main_page .portfolio a .phpProject { display: block !important; width: 100% !important; height: 250px !important; }
+	.main_page .portfolio .desc { display: block !important; width: 100% !important; }
+	.main_page #menu { top: 5%; right: 0; width: 60px; height: 330px; border-bottom-left-radius: 30px; border-top-left-radius: 30px; border-bottom-right-radius: 0; }
+	.main_page #menu > li { float: left; width: 100%; text-align: center; }
+	.main_page #menu a { font-size: 15px; }
+	.main_page .project_list > li { width: calc(100% / 2 - 15px); margin-left: 0; margin-bottom: 15px; }
+	.main_page .project_list > li:nth-child(2n+1) { margin-left: 15px; }
+}
+/* main/index.php */
+
+/* 상단메뉴 S */
+.topMenus { position: fixed; top: 0; right: 5%; width: 470px; height: 30px; background-color: #2e2e2e; opacity: 0.8; text-align: center; border-bottom-right-radius: 10px; border-bottom-left-radius: 10px; padding: 0 10px; line-height: 25px; z-index: 10; }
+.topMenus.menuLogin li { width: calc(100% / 4 - 3px); }
+.topMenus li { display: inline-block; width: calc(100% / 5 - 3px); }
+.topMenus li:after { display: block; content: ""; width: 1px; height: 20px; background-color: #4e4e4e; position: absolute; top: 5px; margin-left: calc(100% / 5 - 10px); }
+.topMenus.menuLogin li:after { margin-left: calc(100% / 4 - 10px); }
+.topMenus li:last-child:after { display: none; }
+.topMenus li a { color: #ffffff; }
+.topMenus li:hover a { font-size: 15px; text-decoration: underline; }
+
+@media all and (max-width: 740px) {
+	.topMenus { top: 1%; right: 0; width: 80px; height: 200px; padding: 0; border-bottom-right-radius: 0; border-top-left-radius: 10px; }
+	.topMenus li { width: 100% !important; height: calc(100% / 5 - 2px); }
+	.topMenus.menuLogin li { height: clac(100% / 3 - 2px); margin-bottom: 11px; }
+	.topMenus li:first-child { margin-top: 12px; }
+	.topMenus li:after { display: none; }
+}
+/* 상단메뉴 E */
+
+/* 로고 S */
+.logoBox { width: 100%; height: 100px; margin-top: 20px; margin-bottom: 30px; min-width: 740px; }
+.logoBox .logo { position: relative; left: calc(50% - 100px); width: 200px; height: 100%; }
+.logoBox .logo a img { display: block; width: 100%; }
+/* 로고 E */
+
+/* 메인페이지 main/main.php S */
+
+/* 달력 */
+.main .sbBox .calendar, .main .sbBox .board { display: block; width: calc(100% / 2 - 27px); height: 400px; }
+.main .sbBox .calendar { margin: 0 10px 0 20px; border: 1px solid #000000; }
+.main .sbBox .calendar a, .main .sbBox .calendar .current { display: inline-block; text-align: center; height: 30px; font-size: 16px; line-height: 30px; }
+.main .sbBox .calendar a { width: 11%; }
+.main .sbBox .calendar .current { width: 76%;}
+.main .sbBox .calendar .yoils { border-top: 1px solid #000000; border-bottom: 1px solid #000000; }
+.main .sbBox .calendar .yoils li { display: inline-block; width: calc(100% / 7 - 3px); text-align: center; border-right: 1px solid #000000; }
+.main .sbBox .calendar .yoils li:last-child { border: 0; }
+.main .sbBox .calendar .days li { display: inline-block; width: calc(100% / 7 - 3px); height: 55.6px; }
+
+
+/* 게시판 */
+.main .sbBox .board { margin-right: 20px; border: 1px solid #000000; }
+.main .sbBox .board ul { width: 100%; height: calc(100% / 11); padding: 0 5px; border-bottom: 1px solid #eeeeee; }
+.main .sbBox .board ul:first-child { background-color: #eeeeee; border-bottom: 1px solid #dddddd; }
+.main .sbBox .board ul li { display: inline-block; line-height: 36px; text-align: center; }
+.main .sbBox .board ul li:first-child { width: calc(50% - 2px); }
+.main .sbBox .board ul li a:hover { text-decoration: underline; }
+.main .sbBox .board ul li:nth-child(2n) { width: calc(30% - 2px); }
+.main .sbBox .board ul li:last-child { width: calc(20% - 2px); }
+
+/* 주식차트 */
+.main .chart { display: block; width: calc(100% - 40px); border: 1px solid #000000; margin: 20px 20px 20px; height: 400px; }
+
+/* 창크기 1000px */
+@media all and (max-width: 1000px) {
+	.main .sbBox { width: calc(100% - 40px); }
+	.main .sbBox .calendar, .main .sbBox .board { display: inline-block; width: 100%; margin: 0 20px 0 20px; }
+	.main .sbBox .calendar { margin-bottom: 20px; }
+}
+
+/* 창크기 1001px */
+@media all and (min-width: 1001px) {
+	.main .sbBox .calendar { float: left; }
+	.main .sbBox .board { float: right; }
+	.main .sbBox:after { clear: both; content: ""; display: block; }
+}
+/* 메인페이지 E */
+
+/* 로그인페이지 member/login S */
+.login { width: 100%; height: 433px; text-align: center; padding: 20px 50px;}
+.login .box { display: inline-block; width: 740px; height: 100%; text-align: center; }
+.login .box .mode { display: inline-block; margin: 5px 0; text-align: right; width: 500px; }
+.login .box .mode a { display: inline-block; }
+.login .box .mode a:hover { text-decoration: underline; }
+.login .box input { display: inline-block; width: 500px; margin-bottom: 10px; height: 40px; outline: none; border: 1px solid #dddddd; border-radius: 20px; }
+.login .box input[type='text'], .login .box input[type='password'] { padding: 0 20px; }
+.login .box input[type='submit'] { cursor: pointer; font-size: 20px; font-weight: 400; background-color: #6cdab2; color: #ffffff; }
+
+/* 로그인페이지 E */
+
+/* 회원가입 member/join S */
+.join { width: 100%; height: 433px; text-align: center; padding: 20px 50px; }
+.join .box { display: inline-block; width: 740px; height: 100%; text-align: center; }
+.join .box .mode { display: inline-block; margin: 10px 0; text-align: right; width: 500px; }
+.join .box .mode a { display: inline-block; margin-right: 20px; }
+.join .box .mode a:hover { text-decoration: underline; }
+.join .box input { display: inline-block; width: 500px; margin-bottom: 10px; height: 40px; outline: none; border: 1px solid #dddddd; border-radius: 20px; padding: 0 20px; }
+.join .box input[type='submit'] { padding: 0; cursor: pointer; font-size: 20px; font-weight: 400; background-color: #6cdab2; color: #ffffff; }
+/* 회원가입 E */
+
+/* 게시판 board/list S */
+.boardList { min-width: 625px; margin: 0 20px; }
+.boardList .title { height: 40px; line-height: 40px; border: 1px solid #eeeeee; border-bottom: 0; }
+.boardList .list { width: 100%; height: 500px; line-height: 46px; border-right: 1px solid #eeeeee; border-left: 1px solid #eeeeee; }
+.boardList ul { display: inline-block; width: 100%; height: calc(100% / 10); }
+.boardList ul li { display: inline-block; border-bottom: 1px solid #eeeeee; border-right: 1px solid #eeeeee; text-align: center; }
+.boardList ul li:last-child { border-right: 0; }
+.boardList ul .num { width: 30px; }
+.boardList ul .sub { width: calc(100% - 290px); }
+.boardList ul .poster { width: 100px; }
+.boardList ul .regDt { width: 150px; }
+.boardList ul li a:hover { text-decoration: underline; }
+/* 게시판 E */
+
+/* 게시판 내용 board/board S */
+
+/* 게시판 내용 E */

@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&display=swap');
+/** 공통 스타일 **/
+* { font-family: 'Nanum Gothic', sans-serif; box-sizing: border-box; }
+body { margin: 0; padding: 0; }
+a { text-decoration: none; color: black; margin: 0; }
+ul { margin: 0; }
+li { list-style: circle; }
+dl, dt, dd { margin: 0; padding: 0; }
+/** 공통 스타일 **/
+
+/** 상단메뉴 S **/
+.top { position: relative; top: 0; left: 0; background-color: #2e2e2e; z-index: 10; width: 100%; height: 35px; line-height: 35px; min-width: 1100px; }
+.top .title { float: left; color: #ffffff; font-size: 15px; margin-left: 20px; }
+.top .member { float: right; color: #ffffff; font-size: 13px; }
+.top .member a { color: #ffffff; margin-right: 20px; border-bottom: 1px solid #ffffff; }
+.top .member a:hover { font-size: 15px; }
+.top:after { clear: both; content: ""; display: block; }
+/** 상단메뉴 E **/
+
+/** 서브메뉴 S **/
+.submenu { position: absolute; left: 0; width: 160px; height: calc(100% - 35px); box-shadow: 0 0 0 2px #dddddd; display: inline-block; }
+.submenu .logo img { width: 100%; }
+.submenu .logo:after { content: ""; display: block; height: 1px; background-color: #dddddd; }
+
+.submenu .content .box { background-color: #eeeeee; height: 30px; line-height: 30px; list-style: none; }
+.submenu .content .box:hover { color: blue; }
+
+.submenu .content ul li { margin-top: 5px; margin-bottom: 10px; }
+.submenu .content ul li:hover { color: blue; }
+.submenu .content ul li:hover a { color: blue; border-bottom: 1px solid blue; }
+.submenu .content ul li a { border-bottom: 1px solid #dddddd; display: block; width: 80%; text-align: center; }
+
+.submenu .content input[type='checkbox'] { display: none; }
+.submenu .content input[type='checkbox'] + label { display: block; cursor: pointer; padding-left: 10px; }
+.submenu .content input[type='checkbox']:checked + label { color: blue; }
+/** 서브메뉴 E **/
+
+/** 회원목록 S **/
+.memList { min-width: 920px; margin: 10px; height: 720px; border: 1px solid #eeeeee; width: calc(100% - 181px); }
+.memList ul { padding: 0; border-bottom: 1px solid #eeeeee; }
+.memList .title { height: 30px; line-height: 30px; }
+.memList .list ul { line-height: 60px;  }
+.memList ul li { list-style: none; display: inline-block; text-align: center; border-right: 1px solid #eeeeee; }
+.mmeList ul li a { text-align: center; }
+.memList ul li a:hover { text-decoration: underline; color: blue; }
+.memList ul li:last-child { border-right: 0; }
+.memList .list { padding: 0; width: 100%; }
+.memList .list .checkbox { width: 20px; }
+.memList .num { width: 35px; }
+.memList .id { width: calc(100% - 800px); }
+.memList .poster { width: 150px; }
+.memList .name { width: 60px; }
+.memList .email { width: 188px; }
+.memList .cellPhone { width: 120px; }
+.memList .level { width : 67px; }
+.memList .regDt, .memList .modDt { width: 100px; }
+.memList .ud { width: 67px; }
+/** 회원목록 E **/
+
+/** 회원가입 S **/
+.join .box .logo img { height: 100px; }
+.join { width: 100%; height: 433px; text-align: center; padding: 20px 50px; }
+.join .box { display: inline-block; width: 740px; height: 100%; text-align: center; }
+.join .box .modeTit { display: inline-block; margin: 10px 0; text-align: right; width: 500px; }
+.join .box .modeTit .title { float: left; font-weight: 700; margin-left: 20px; }
+.join .box .modeTit a { display: inline-block; margin-right: 20px; float: right; }
+.join .box .modeTit a:hover { text-decoration: underline; }
+.join .box .modeTit:after { clear: both; content: ""; display: block; }
+.join .box input { display: inline-block; width: 500px; margin-bottom: 10px; height: 40px; outline: none; border: 1px solid #dddddd; border-radius: 20px; padding: 0 20px; }
+.join .box input[type='submit'] { padding: 0; cursor: pointer; font-size: 20px; font-weight: 700; background-color: #6cdab2; color: #ffffff; }
+/** 회원가입 E **/
+
+/** 로그인 S **/
+.login .box .logo img { height: 100px; }
+.login { width: 100%; height: 433px; text-align: center; padding: 20px 50px; }
+.login .box { display: inline-block; width: 740px; height: 100%; text-align: center; }
+.login .box .modeTit { display: inline-block; margin: 10px 0; text-align: right; width: 500px; }
+.login .box .modeTit .title { float: left; font-weight: 700; margin-left: 20px; }
+.login .box .modeTit .mode { display: inline-block; margin-right: 20px; float: right; }
+.login .box .modeTit a:hover { text-decoration: underline; }
+.login .box .modeTit:after { clear: both; content: ""; display: block; }
+.login .box input { display: inline-block; width: 500px; margin-bottom: 10px; height: 40px; outline: none; border: 1px solid #dddddd; border-radius: 20px; padding: 0 20px; }
+.login .box input[type='submit'] { padding: 0; cursor: pointer; font-size: 20px; font-weight: 700; background-color: #6cdab2; color: #ffffff; }
+/** 로그인 E **/
+
+/** 회원수정 S **/
+.form .update { position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 320px; background-color: #ffffff; border-radius: 10px; padding: 10px; }
+.form .update .logo img { width: 300px; }
+.form .update .title { font-size: 15px; font-weight: 700; }
+.form .update dl { display: table; }
+.form .update dt, .form .update dd { display: table-cell; height: 40px; padding: 10px 0 0; }
+.form .update dt { width: 95px; }
+.form .update dd { width: 205px; padding-left: 3px; }
+.form .update dl dd input { display: block; width: 100%; height: 100%; outline: none; border: 1px solid #cccccc; border-radius: 5px; }
+.form .update input[type='submit'] { width: 100%; margin-top: 10px; }
+/** 회원수정 E **/
+
+/** 게시판 목록 S **/
+.boardList { min-width: 920px; margin: 10px; height: 720px; border: 1px solid #eeeeee; width: calc(100% - 181px); }
+.boardList ul { padding: 0; border-bottom: 1px solid #eeeeee; }
+.boardList .title { height: 30px; line-height: 30px; }
+.boardList .list ul { line-height: 60px;  }
+.boardList ul li { list-style: none; display: inline-block; text-align: center; border-right: 1px solid #eeeeee; }
+.boardList ul li a:hover { text-decoration: underline; color: blue; }
+.boardList ul li:last-child { border-right: 0; }
+.boardList .list { padding: 0; width: 100%; }
+.boardList .list .checkbox { width: 20px; }
+.boardList .num { width: 32px; }
+.boardList .sub { width: calc(100% - 500px); }
+.boardList .poster { width: 150px; }
+.boardList .regDt, .boardList .modDt { width: 100px; }
+.boardList .ud { width: 67px; }
+/** 게시판 목록 E **/
+
+/** 글작성 S **/
+.write { min-width: 920px; margin: 10px; height: 720px; width: calc(100% - 181px); }
+.write .board { width: 500px; }
+.write .board input:first-child { width: 70%; }
+.write .board input { display: inline-block; width: 145px; margin-bottom: 10px; }
+.write .board textarea { display: block; resize: none; width: 100%; height: 500px; }
+/** 글작성 E **/
+
+/** 공통 우선적용 속성 **/
+.dn { display: none; }
+.position { position: absolute; left: 161px; }
