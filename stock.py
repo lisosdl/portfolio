@@ -37,14 +37,13 @@ for tr in trs :
         if i == 12 :
             data.append(td_data)
         
-print(data)
-dbURL = 'lisosdl.cafe24.com'
-dbPort=3306
-dbUser='lisosdl'
-dbPass='zaq7530159'
+dbURL = '호스트'
+dbPort=포트번호
+dbUser='닉네임입력'
+dbPass='db비밀번호입력'
 
 conn = pymysql.connect(
-    host=dbURL, port=dbPort, user=dbUser, passwd=dbPass, db='lisosdl',
+    host=dbURL, port=dbPort, user=dbUser, passwd=dbPass, db='db이름',
     charset='utf8', use_unicode=True
 )
 
